@@ -21,3 +21,11 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.gitignore
+src/assets/layout/colors.png
+src/assets/layout/hover-box.png
+src/assets/layout/hover-button.png
+src/assets/layout/hover-icons.png
+src/assets/layout/hover-prices.png
+src/assets/layout/land.zip
+src/assets/layout/screencapture.png

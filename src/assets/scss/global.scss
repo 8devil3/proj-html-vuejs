@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "AvenirNextRounded";
+    src: url("https://db.onlinewebfonts.com/t/d6b24ec9419839c8952607add9546c00.woff2") format("woff2");
+
+}
+
+:root {
+    font-family: 'AvenirNextRounded', sans-serif;
+    font-size: 16px;
+}
