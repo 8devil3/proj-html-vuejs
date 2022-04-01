@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    pippo
     <header-site />
     <main-site />
     <footer-site />

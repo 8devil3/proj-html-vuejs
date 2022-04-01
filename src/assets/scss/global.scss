@@ -8,13 +8,128 @@ ul {
     list-style: none;
 }
 
-@font-face {
-    font-family: "AvenirNextRounded";
-    src: url("https://db.onlinewebfonts.com/t/d6b24ec9419839c8952607add9546c00.woff2") format("woff2");
+/* font "Nunito" */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
 
-}
 
 :root {
-    font-family: 'AvenirNextRounded', sans-serif;
+/* tipografia */
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
+
+    h1, h2, h3 {
+        line-height: 150%;
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+/* colori */
+
+    /* colori base */
+    --primary: #2f55d4;
+    --primary-hover: #2443AC;
+
+    /* header */
+    --header-links: #161C2D;
+    --header-links-hover: var(--primary);
+
+    --header-search-icon: #adb5bd;
+
+    --header-icons-bg: #2f55d41a;
+    --header-icons-border: #d1daf6;
+    --header-icons-text: var(--primary);
+    --header-icons-bg-hover: var(--primary);
+    --header-icons-border-hover: var(--primary);
+    --header-icons-text-hover: #fff;
+
+    --header-icons-shadow: 0 2px 4px 1px #C5D0F2;
+
+    /* main */
+    --content-text: #8492a6;
+    --h2: #161C2D;
+    --h3: #3c4858;
+
+    --badge-bg: #2f55d41a;
+    --badge-border: #f8f9fc;
+
+    --prices: #161C2D;
+
+    --icons-bg: #2f55d41a;
+    --icons-border: #d1daf6;
+
+    --badge-best-bg: #F17425;
+
+    /* footer */
+    --footer-bg: #202942;
+    --footer-links-text: #adb5bd;
+    --footer-headings: #f8f9fc;
+    --input-placeholder: #adb5bd;
+
+    /* colori pulsanti */
+    --btn-primary-bg: var(--primary);
+    --btn-primary-bg-hover: var(--primary-hover);
+    --btn-primary-border: var(--primary);
+    --btn-primary-border-hover: var(--primary-hover);
+    --btn-primary-text: #fff;
+    --btn-primary-text-hover: #fff;
+
+    --btn-secondary-bg: #fff;
+    --btn-secondary-bg-hover: var(--primary-hover);
+    --btn-secondary-border: var(--primary);
+    --btn-secondary-border-hover: var(--primary-hover);
+    --btn-secondary-text: var(--primary);
+    --btn-secondary-text-hover: #fff;
+}
+
+/* layout */
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+/* pulsanti */
+
+button {
+    border: 0;
+    border-radius: 0.5rem;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    text-transform: capitalize;
 }
