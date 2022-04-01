@@ -36,6 +36,7 @@ header {
    height: 4.5rem;
 
    img {
+      display: block;
       height: 2rem;
    }
 

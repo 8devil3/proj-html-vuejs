@@ -67,7 +67,16 @@ ul {
     --footer-bg: #202942;
     --footer-links-text: #adb5bd;
     --footer-headings: #f8f9fc;
+
+    --input-bg: #27314f;
     --input-placeholder: #adb5bd;
+    --input-label-mandatory: #e43f52;
+
+    --button-bg: #27314f;
+    --button-text: var(--primary);
+    --button-shadow: 0 2px 4px 0 var(--primary);
+
+    --colophon-border: #283353;
 
     /* colori pulsanti */
     --btn-primary-bg: var(--primary);
@@ -127,9 +136,9 @@ ul {
 
 button {
     border: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     display: block;
-    padding: 0.5rem 0.8rem;
+    padding: 0.75rem 0.8rem;
     font-size: 1rem;
     text-transform: capitalize;
 }
