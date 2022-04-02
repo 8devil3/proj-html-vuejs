@@ -143,6 +143,7 @@ button {
     text-transform: capitalize;
     letter-spacing: 0.5px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -152,6 +153,13 @@ button {
     border: 1px var(--btn-primary-border) solid;
     box-shadow: 0 2px 4px 0 var(--header-icons-shadow);
     font-weight: 700;
+    transition: background 0.2s, border 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: var(--btn-primary-bg-hover);
+        color: var(--btn-primary-text-hover);
+        border: 1px var(--btn-primary-border-hover) solid;
+    }
 }
 
 .btn-secondary {
@@ -161,4 +169,12 @@ button {
     border: 1px var(--btn-secondary-border) solid;
     box-shadow: 0 2px 4px 0 var(--header-icons-shadow);
     font-weight: 700;
+    transition: background 0.2s, border 0.2s, color 0.2s;
+
+
+    &:hover {
+        background-color: var(--btn-secondary-bg-hover);
+        color: var(--btn-secondary-text-hover);
+        border: 1px var(--btn-secondary-border-hover) solid;
+    }
 }
