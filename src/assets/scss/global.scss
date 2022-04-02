@@ -42,6 +42,7 @@ ul {
     --green: #2ECA8B;
 
     /* header */
+    --header-bg: #F8F9FC;
     --header-links: #161C2D;
     --header-links-hover: var(--primary);
 
@@ -114,12 +115,12 @@ ul {
 /* layout */
 
 .container {
-    max-width: 1152px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
 section {
-    margin-top: 6rem;
+    padding-top: 6rem;
 }
 
 .row {

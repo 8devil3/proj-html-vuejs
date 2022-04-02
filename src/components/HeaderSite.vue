@@ -1,5 +1,6 @@
 <template>
-   <header class="container row justify-between align-center">
+<header>
+   <div class="container row justify-between align-center">
       <img src="../assets/img/logo-dark.png" alt="Landrick logo">
       <nav>
          <ul class="row align-center">
@@ -18,7 +19,8 @@
             <div class="header-icons row align-center justify-center"><i class="fa-regular fa-user"></i></div>
          </div>
       </div>
-   </header>
+   </div>
+</header>
 </template>
 
 <script>
@@ -60,11 +62,12 @@ export default {
 <style lang="scss" scoped>
 
 header {
-   height: 4.5rem;
+   background-color: var(--header-bg);
+   padding: 1rem;
 
    img {
       display: block;
-      height: 2rem;
+      height: 1.5rem;
    }
 
    nav a {
@@ -73,6 +76,7 @@ header {
       margin: 0 0.5rem;
       text-transform: uppercase;
       color: var(--header-links);
+      font-size: 0.9rem;
       font-weight: 700;
       letter-spacing: 1px;
 

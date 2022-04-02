@@ -27,6 +27,9 @@ export default {
 
 <style lang="scss" scoped>
 section {
+   background-color: var(--header-bg);
+   padding-bottom: 6rem;
+
    .left {
       width: 40%;
 
