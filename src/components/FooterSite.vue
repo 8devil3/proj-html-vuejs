@@ -166,6 +166,7 @@ footer {
    background-color: var(--footer-bg);
    color: var(--footer-links-text);
    padding-top: 4rem;
+   margin-top: 6rem;
 
    h3 {
       color: var(--footer-headings);

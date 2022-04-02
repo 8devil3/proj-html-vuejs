@@ -14,10 +14,19 @@ ul {
     font-size: 16px;
     color: var(--content-text);
 
-    h1, h2 {
+    h1, h2, h3 {
         line-height: 150%;
         font-weight: 700;
         color: var(--h2);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    strong {
+        font-weight: 700;
+        color: var(--primary);
     }
 
     a {
@@ -30,6 +39,7 @@ ul {
     /* colori base */
     --primary: #2f55d4;
     --primary-hover: #2443AC;
+    --green: #2ECA8B;
 
     /* header */
     --header-links: #161C2D;
@@ -57,10 +67,15 @@ ul {
 
     --prices: #161C2D;
 
-    --icons-bg: #2f55d41a;
+    --icons-bg: #e5e9f6;
     --icons-border: #d1daf6;
 
     --badge-best-bg: #F17425;
+    --badge-best-shadow: #d55b0e;
+
+    --code-bg: #3C4858;
+    --code-btn-disabled: #4F5A69;
+    --code-btn-text: #fff;
 
     /* footer */
     --footer-bg: #202942;
@@ -79,6 +94,8 @@ ul {
     --colophon-border: #283353;
 
     /* colori pulsanti */
+    --btn-shadow: #2f55d41a;
+
     --btn-primary-bg: var(--primary);
     --btn-primary-bg-hover: var(--primary-hover);
     --btn-primary-border: var(--primary);
@@ -99,6 +116,10 @@ ul {
 .container {
     max-width: 1152px;
     margin: 0 auto;
+}
+
+section {
+    margin-top: 6rem;
 }
 
 .row {
@@ -151,7 +172,7 @@ button {
     background-color: var(--btn-primary-bg);
     color: var(--btn-primary-text);
     border: 1px var(--btn-primary-border) solid;
-    box-shadow: 0 2px 4px 0 var(--header-icons-shadow);
+    box-shadow: 0 4px 6px 0 var(--btn-shadow);
     font-weight: 700;
     transition: background 0.2s, border 0.2s, color 0.2s;
 
@@ -167,10 +188,9 @@ button {
     background-color: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
     border: 1px var(--btn-secondary-border) solid;
-    box-shadow: 0 2px 4px 0 var(--header-icons-shadow);
+    box-shadow: 0 4px 6px 0 var(--btn-shadow);
     font-weight: 700;
     transition: background 0.2s, border 0.2s, color 0.2s;
-
 
     &:hover {
         background-color: var(--btn-secondary-bg-hover);

@@ -20,7 +20,15 @@ import Section5 from './main-components/Section5.vue'
 import Section6 from './main-components/Section6.vue'
 
 export default {
-  components: { JumbotronSite, Section1, Section2, Section3, Section4, Section5, Section6 },
+   components: {
+      JumbotronSite,
+      Section1,
+      Section2,
+      Section3,
+      Section4,
+      Section5,
+      Section6
+   },
    name: 'MainSite'
 }
 </script>

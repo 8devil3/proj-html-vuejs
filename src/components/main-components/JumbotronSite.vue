@@ -27,8 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-   margin-top: 6rem;
-
    .left {
       width: 40%;
 

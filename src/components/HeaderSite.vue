@@ -83,7 +83,7 @@ header {
       .has-submenu::after {
          content: '\f078';
          font-size: 0.8rem;
-         font-family: 'Font Awesome 5 Free';
+         font-family: 'Font Awesome 6 Free';
          font-weight: 900;
          margin-left: 0.5rem;
       }
