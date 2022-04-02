@@ -3,10 +3,7 @@
       <img src="../assets/img/logo-dark.png" alt="Landrick logo">
       <nav>
          <ul class="row align-center">
-            <li><a href="#">home</a></li>
-            <li><a href="#" class="has-submenu">landing</a></li>
-            <li><a href="#" class="has-submenu">pages</a></li>
-            <li><a href="#" class="has-submenu">docs</a></li>
+            <li v-for="link in links" :key="link.id"><a :href="link.url" :class="{'has-submenu':link.submenu}">{{ link.text }}</a></li>
          </ul>
       </nav>
       <div class="row align-center">
@@ -26,7 +23,37 @@
 
 <script>
 export default {
-   name: 'HeaderSite'
+   name: 'HeaderSite',
+   data() {
+      return {
+         links: [
+            {
+               id: 1,
+               url: "#",
+               text: "home",
+               submenu: false
+            },
+            {
+               id: 2,
+               url: "#",
+               text: "landing",
+               submenu: true
+            },
+            {
+               id: 3,
+               url: "#",
+               text: "pages",
+               submenu: true
+            },
+            {
+               id: 4,
+               url: "#",
+               text: "docs",
+               submenu: true
+            }
+         ]
+      }
+   }
 }
 </script>
 

@@ -12,31 +12,11 @@
            </div>
         </div>
         <div class="widget-2 row justify-between">
-         <div>
-            <h3>Company</h3>
+         <div v-for="cat in links" :key="cat.id">
+            <h3>{{ cat.category }}</h3>
             <nav>
                <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-               </ul>
-            </nav>
-         </div>
-         <div>
-            <h3>Useful links</h3>
-            <nav>
-               <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">About us</a></li>
+                  <li v-for="link in cat.content" :key="link.id"><a href="#">{{ link.text }}</a></li>
                </ul>
             </nav>
          </div>
@@ -55,14 +35,129 @@
 
         </div>
      </div>
-     <div class="colophon row align-center justify-between"></div>
+     <hr>
+     <div class="colophon container row align-center justify-between">
+        <p>&copy; 2020 Landrick. Design with <i class="fa-solid fa-heart"></i> by <a href="https://www.instagram.com/8devil_art/">8devil</a></p>
+        <div class="row align-center">
+           <img v-for="img in imgPayments" :key="img.id" :src="require('../assets/img/payments/' + img.fileName)" :alt="img.alt">
+        </div>
+     </div>
   </footer>
 </template>
 
 <script>
 export default {
-   name: 'FooterSite'
-
+   name: 'FooterSite',
+   data(){
+      return {
+         links: [
+            {
+               id: 1,
+               category: 'company',
+               content: [
+                  {
+                     id: 1,
+                     url: '#',
+                     text: 'About us',
+                  },
+                  {
+                     id: 2,
+                     url: '#',
+                     text: 'Services',
+                  },
+                  {
+                     id: 3,
+                     url: '#',
+                     text: 'Team',
+                  },
+                  {
+                     id: 4,
+                     url: '#',
+                     text: 'Pricing',
+                  },
+                  {
+                     id: 5,
+                     url: '#',
+                     text: 'Project',
+                  },
+                  {
+                     id: 6,
+                     url: '#',
+                     text: 'Carrers',
+                  },
+                  {
+                     id: 7,
+                     url: '#',
+                     text: 'Blog',
+                  },
+                  {
+                     id: 8,
+                     url: '#',
+                     text: 'Login',
+                  },
+               ]
+            },
+            {
+               id: 2,
+               category: 'useful links',
+               content: [
+                  {
+                     id: 9,
+                     url: '#',
+                     text: 'Terms of Services',
+                  },
+                  {
+                     id: 10,
+                     url: '#',
+                     text: 'Privacy Policy',
+                  },
+                  {
+                     id: 11,
+                     url: '#',
+                     text: 'Documentation',
+                  },
+                  {
+                     id: 12,
+                     url: '#',
+                     text: 'Changelog',
+                  },
+                  {
+                     id: 13,
+                     url: '#',
+                     text: 'Components',
+                  }
+               ]
+            }
+         ],
+         imgPayments: [
+            {
+               id: 1,
+               fileName: 'american-ex.png',
+               alt: 'Amenrican Express'
+            },
+            {
+               id: 2,
+               fileName: 'discover.png',
+               alt: 'Discover'
+            },
+            {
+               id: 3,
+               fileName: 'master-card.png',
+               alt: 'Mastercard'
+            },
+            {
+               id: 4,
+               fileName: 'paypal.png',
+               alt: 'PayPal'
+            },
+            {
+               id: 5,
+               fileName: 'visa.png',
+               alt: 'Visa'
+            }
+         ]
+      }
+   }
 }
 </script>
 
@@ -70,16 +165,16 @@ export default {
 footer {
    background-color: var(--footer-bg);
    color: var(--footer-links-text);
+   padding-top: 4rem;
 
    h3 {
       color: var(--footer-headings);
       font-weight: 400;
       margin-bottom: 1.5rem;
+      text-transform: capitalize;
    }
 
    .container {
-      padding: 4rem 0;
-
       .widget-1 {
          width: 30%;
    
@@ -105,12 +200,21 @@ footer {
    
       .widget-2 {
          flex-grow: 1;
+         flex-shrink: 0;
          margin: 0 4rem;
+
+         > div {
+            margin: 0 1rem;
+         }
 
          a {
             display: block;
             color: var(--footer-links-text);
             padding-bottom: 1rem;
+
+            &:hover {
+               color: var(--footer-links-hover);
+            }
 
             &::before {
                content: '\f054';
@@ -176,9 +280,33 @@ footer {
       }
    }
 
+   hr {
+      border: 0;
+      height: 1px;
+      background-color: var(--colophon-border);
+      margin-top: 2rem;
+   }
+
    .colophon {
       height: 6rem;
-      border-top: 1px var(--colophon-border) solid;
+
+      a {
+         color: #f60;
+
+         &:hover {
+            color: #f84;
+         }
+      }
+
+      .fa-heart {
+         color: var(--input-label-mandatory);
+         font-size: 0.9rem;
+      }
+
+      img {
+         height: 1.5rem;
+         margin-left: 0.25rem;
+      }
    }
 }
 
