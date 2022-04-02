@@ -22,7 +22,7 @@ section {
    .wrapper {
       margin: 0 auto;
       text-align: center;
-      width: 50%;
+      max-width: 35rem;
    }
 
    p {

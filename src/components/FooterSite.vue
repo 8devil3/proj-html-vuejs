@@ -212,6 +212,7 @@ footer {
             display: block;
             color: var(--footer-links-text);
             padding-bottom: 1rem;
+            transition: color 0.3s;
 
             &:hover {
                color: var(--footer-links-hover);
@@ -229,7 +230,7 @@ footer {
       }
    
       .widget-3 {
-         width: 30%;
+         width: 25%;
    
          .newsletter-wrapper{
             margin-top: 1rem;
@@ -270,6 +271,7 @@ footer {
    
             button {
                margin-top: 0.75rem;
+               padding: 0.75rem 1rem;
                background-color: var(--button-bg);
                color: var(--button-text);
                font-size: 0.9rem;
