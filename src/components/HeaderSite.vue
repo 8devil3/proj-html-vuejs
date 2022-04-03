@@ -14,8 +14,8 @@
          </div>
          
          <div class="row align-center">
-            <div v-for="login in headerData.userLogin" :key="login.id" class="header-icons row align-center justify-center">
-               <a :href="login.url"><i :class="login.fontAwesomeClasses"></i></a>
+            <div v-for="login in headerData.userLogin" :key="login.id" class="header-icons row align-center">
+               <a :href="login.url" class="row align-center justify-center"><i :class="login.fontAwesomeClasses"></i></a>
             </div>
          </div>
       </div>
@@ -97,7 +97,7 @@ header {
       }
    }
 
-   .header-icons {
+   .header-icons a {
       height: 2.25rem;
       width: 2.25rem;
       background-color: var(--header-icons-bg);
