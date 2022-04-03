@@ -1,0 +1,474 @@
+{
+   "header": {
+      "logo": {
+         "fileName": "logo-dark.png",
+         "alt": "Landrick logo"
+      },
+      "links": [
+         {
+            "id": 1,
+            "text": "home",
+            "url": "#",
+            "submenu": false
+         },
+         {
+            "id": 2,
+            "text": "landing",
+            "url": "#",
+            "submenu": true,
+            "subLinks": [
+               {
+                  "id": 1,
+                  "text": "item1",
+                  "url": "#"
+               },
+               {
+                  "id": 2,
+                  "text": "item2",
+                  "url": "#"
+               },
+               {
+                  "id": 3,
+                  "text": "item3",
+                  "url": "#"
+               },
+               {
+                  "id": 4,
+                  "text": "item4",
+                  "url": "#"
+               }
+            ]
+         },
+         {
+            "id": 3,
+            "text": "pages",
+            "url": "#",
+            "submenu": true,
+            "subLinks": [
+               {
+                  "id": 1,
+                  "text": "item1",
+                  "url": "#"
+               },
+               {
+                  "id": 2,
+                  "text": "item2",
+                  "url": "#"
+               },
+               {
+                  "id": 3,
+                  "text": "item3",
+                  "url": "#"
+               },
+               {
+                  "id": 4,
+                  "text": "item4",
+                  "url": "#"
+               }
+            ]
+         },
+         {
+            "id": 4,
+            "text": "docs",
+            "url": "#",
+            "submenu": true,
+            "subLinks": [
+               {
+                  "id": 1,
+                  "text": "item1",
+                  "url": "#"
+               },
+               {
+                  "id": 2,
+                  "text": "item2",
+                  "url": "#"
+               },
+               {
+                  "id": 3,
+                  "text": "item3",
+                  "url": "#"
+               },
+               {
+                  "id": 4,
+                  "text": "item4",
+                  "url": "#"
+               }
+            ]
+         }
+      ],
+      "userLogin": [
+         {
+            "id": 1,
+            "type": "github",
+            "url": "#",
+            "fontAwesomeClasses": "fa-brands fa-github"
+         },
+         {
+            "id": 2,
+            "type": "stack overflow",
+            "url": "#",
+            "fontAwesomeClasses": "fa-brands fa-stack-overflow"
+         },
+         {
+            "id": 3,
+            "type": "user email",
+            "url": "#",
+            "fontAwesomeClasses": "fa-regular fa-user"
+         }
+      ]
+   },
+   "jumbotron": {
+      "badgeText": "development",
+      "title": "a complete developer toolset",
+      "content": "Launch your campaign and benefit from our expertise on designing an managing conversion centered bootstrap4 html page.",
+      "ver": "Current Version v2.6.0",
+      "rightImgFileName": "about.png",
+      "rightImgAlt": "About",
+      "btn1txt": "get started",
+      "btn2txt": "documentation"
+   },
+   "section_1": [
+      {
+         "id": 1,
+         "imgFileName": "amazon.svg",
+         "alt": "Amazon"
+      },
+      {
+         "id": 2,
+         "imgFileName": "google.svg",
+         "alt": "Google"
+      },
+      {
+         "id": 3,
+         "imgFileName": "lenovo.svg",
+         "alt": "Lenovo"
+      },
+      {
+         "id": 4,
+         "imgFileName": "paypal.svg",
+         "alt": "PayPal"
+      },
+      {
+         "id": 5,
+         "imgFileName": "shopify.svg",
+         "alt": "Shopify"
+      },
+      {
+         "id": 6,
+         "imgFileName": "spotify.svg",
+         "alt": "Spotify"
+      }
+   ],
+   "section_2": {
+      "title": "Key Features",
+      "content": "Start working with <strong>Landrick</strong> that can provide everything you need to generate awareness, drive traffic, connect.",
+      "cards": [
+         {
+            "id": 1,
+            "title": "modular",
+            "content": "Composed in a pseudo-Latin language which more or less corresponds.",
+            "link": "#",
+            "fontAwesomeClasses": "fa-solid fa-layer-group"
+         },
+         {
+            "id": 2,
+            "title": "responsive",
+            "content": "Composed in a pseudo-Latin language which more or less corresponds.",
+            "link": "#",
+            "fontAwesomeClasses": "fa-solid fa-mobile-screen"
+         },
+         {
+            "id": 3,
+            "title": "customizable",
+            "content": "Composed in a pseudo-Latin language which more or less corresponds.",
+            "link": "#",
+            "fontAwesomeClasses": "fa-solid fa-location-crosshairs"
+         },
+         {
+            "id": 4,
+            "title": "scalable",
+            "content": "Composed in a pseudo-Latin language which more or less corresponds.",
+            "link": "#",
+            "fontAwesomeClasses": "fa-solid fa-maximize"
+         }
+      ]
+   },
+   "section_3": {
+      "subtitle": "Quickstart",
+      "title": "Awesome isn't it? Let's dive in!",
+      "content": "Start working with <strong>Landrick</strong> that can provide everything you need to generate awareness, drive traffic, connect.",
+      "feat1": "Organize your data",
+      "feat2": "Work with any team"
+   },
+   "section_4": {
+      "title": "Build tools and extensive documentation",
+      "content": "You can combine all the Landrick templates into a single one, you can take a component frome the Application theme and use it in the Website",
+      "imgRightFilename": "1.png",
+      "imgRightAlt": "Build tools and extensive documentation",
+      "features": [
+         {
+            "id": 1,
+            "text": "Digital Marketing Solutions for Tomorrow"
+         },
+         {
+            "id": 2,
+            "text": "Our Talented &#38; Experienced Marketing Agency"
+         },
+         {
+            "id": 3,
+            "text": "Create your own skin to match your brand"
+         }
+      ]
+   },
+   "section_5": {
+      "title": "Our rates for developer from Landrick team",
+      "content": "Start working withs <strong>Landrick</strong> that can provide everything you need to generate awareness, drive traffic, connect.",
+      "cards": [
+         {
+            "id": 1,
+            "plan": "Basic",
+            "price": "$9.00",
+            "best": false,
+            "period": "Per Month",
+            "description": "All the basics for businesses that are just getting started.",
+            "features": [
+               {
+                  "id": 1,
+                  "feature": "full access"
+               },
+               {
+                  "id": 2,
+                  "feature": "enhanced security"
+               },
+               {
+                  "id": 3,
+                  "feature": "surce files"
+               },
+               {
+                  "id": 4,
+                  "feature": "1 domain free"
+               },
+               {
+                  "id": 5,
+                  "feature": "enhanced security"
+               }
+            ]
+         },
+         {
+            "id": 2,
+            "plan": "Business",
+            "price": "$39.00",
+            "best": true,
+            "period": "Per Month",
+            "description": "Better for growing businesses that want more customers.",
+            "features": [
+               {
+                  "id": 1,
+                  "feature": "full access"
+               },
+               {
+                  "id": 2,
+                  "feature": "enhanced security"
+               },
+               {
+                  "id": 3,
+                  "feature": "surce files"
+               },
+               {
+                  "id": 4,
+                  "feature": "1 domain free"
+               },
+               {
+                  "id": 5,
+                  "feature": "enhanced security"
+               }
+            ]
+         },
+         {
+            "id": 3,
+            "plan": "Enterprise",
+            "price": "$79.00",
+            "best": false,
+            "period": "Per Month",
+            "description": "Advanced features for pros who need more customization.",
+            "features": [
+               {
+                  "id": 1,
+                  "feature": "full access"
+               },
+               {
+                  "id": 2,
+                  "feature": "enhanced security"
+               },
+               {
+                  "id": 3,
+                  "feature": "surce files"
+               },
+               {
+                  "id": 4,
+                  "feature": "1 domain free"
+               },
+               {
+                  "id": 5,
+                  "feature": "enhanced security"
+               }
+            ]
+         }
+      ]
+   },
+   "section_6": {
+      "title": "Want to be among the first to find out?",
+      "content": "Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.",
+      "inputPlaceholder": "Email address",
+      "btnSubmitTxt": "get started"
+   },
+   "footer": {
+      "widget_1": {
+         "logo": {
+            "fileName": "logo-light.png",
+            "alt": "Landrick logo"
+         },
+         "content": "Start working with Landrick that can provide everything you need to generate awarness, drive traffic, connect.",
+         "social": {
+            "facebook": {
+               "id": 1,
+               "fontAwesomeClasses": "fa-brands fa-facebook-f",
+               "url": "#"
+            },
+            "instagram": {
+               "id": 2,
+               "fontAwesomeClasses": "fa-brands fa-instagram",
+               "url": "#"
+            },
+            "twitter": {
+               "id": 3,
+               "fontAwesomeClasses": "fa-brands fa-twitter",
+               "url": "#"
+            },
+            "linkedin": {
+               "id": 4,
+               "fontAwesomeClasses": "fa-brands fa-linkedin",
+               "url": "#"
+            }
+         }
+      },
+      "widget_2": {
+         "links": [
+            {
+               "id": 1,
+               "title": "company",
+               "content": [
+                  {
+                     "id": 1,
+                     "url": "#",
+                     "text": "About us"
+                  },
+                  {
+                     "id": 2,
+                     "url": "#",
+                     "text": "Services"
+                  },
+                  {
+                     "id": 3,
+                     "url": "#",
+                     "text": "Team"
+                  },
+                  {
+                     "id": 4,
+                     "url": "#",
+                     "text": "Pricing"
+                  },
+                  {
+                     "id": 5,
+                     "url": "#",
+                     "text": "Project"
+                  },
+                  {
+                     "id": 6,
+                     "url": "#",
+                     "text": "Carrers"
+                  },
+                  {
+                     "id": 7,
+                     "url": "#",
+                     "text": "Blog"
+                  },
+                  {
+                     "id": 8,
+                     "url": "#",
+                     "text": "Login"
+                  }
+               ]
+            },
+            {
+               "id": 2,
+               "title": "useful links",
+               "content": [
+                  {
+                     "id": 9,
+                     "url": "#",
+                     "text": "Terms of Services"
+                  },
+                  {
+                     "id": 10,
+                     "url": "#",
+                     "text": "Privacy Policy"
+                  },
+                  {
+                     "id": 11,
+                     "url": "#",
+                     "text": "Documentation"
+                  },
+                  {
+                     "id": 12,
+                     "url": "#",
+                     "text": "Changelog"
+                  },
+                  {
+                     "id": 13,
+                     "url": "#",
+                     "text": "Components"
+                  }
+               ]
+            }
+         ]
+      },
+      "widget_3": {
+         "title": "Newsletter",
+         "content": "Sign up and receive the latest tips via email.",
+         "inputLabel": "Write your email",
+         "inputPlaceholder": "Your email",
+         "btnSubmitTxt": "Subscribe"
+      },
+      "colophon": {
+         "content": "Landrick. Design with <i class=\"fa-solid fa-heart\"></i> by <a href=\"https://www.instagram.com/8devil_art/\">8devil</a>",
+         "imgPayments": [
+            {
+               "id": 1,
+               "fileName": "american-ex.png",
+               "alt": "American Express"
+            },
+            {
+               "id": 2,
+               "fileName": "discover.png",
+               "alt": "Discover"
+            },
+            {
+               "id": 3,
+               "fileName": "master-card.png",
+               "alt": "Mastercard"
+            },
+            {
+               "id": 4,
+               "fileName": "paypal.png",
+               "alt": "PayPal"
+            },
+            {
+               "id": 5,
+               "fileName": "visa.png",
+               "alt": "Visa"
+            }
+         ]
+      }
+   }
+}

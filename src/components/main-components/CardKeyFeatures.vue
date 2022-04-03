@@ -1,10 +1,10 @@
 <template>
 <article>
    <div class="icon row align-center justify-center">
-      <i :class="'fa-solid ' + card.icon"></i>
+      <i :class="card.fontAwesomeClasses"></i>
    </div>
    <h3>{{ card.title }}</h3>
-   <p>{{ card.text }}</p>
+   <p>{{ card.content }}</p>
    <a :href="card.link">read more</a>
 </article>
 </template>

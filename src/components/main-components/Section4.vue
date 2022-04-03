@@ -2,25 +2,38 @@
 <section>
    <div class="container row align-center justify-between">
       <div class="left">
-         <h2>Build tools and<br>extensive documentation</h2>
-         <p>You can combine all the Landrick templates into a single one, you can take a component frome the Application theme and use it in the Website.</p>
+         <h2>{{ section4_data.title }}</h2>
+         <p>{{ section4_data.content }}</p>
          <ul>
-            <li>Digital Marketing Solutions for Tomorrow</li>
-            <li>Our Talented &#38; Experienced Marketing Agency</li>
-            <li>Create your own skin to match your brand</li>
+            <li v-for="feat in section4_data.features" :key="feat.id">{{ feat.text }}</li>
          </ul>
          <button class="btn btn-primary">read more <i class="fa-solid fa-arrow-right"></i></button>
       </div>
       <div class="right">
-         <img src="../../assets/img/1.png" alt="Build tools and extensive documentation">
+         <img :src="require('../../assets/img/' + section4_data.imgRightFilename)" :alt="section4_data.imgRightAlt">
       </div>
    </div>
 </section>
 </template>
 
 <script>
+import data from '../siteContent.json'
+
 export default {
-   name: 'Section4'
+   name: 'Section4',
+   data(){
+      return {
+         section4_data: {}
+      }
+   },
+   methods: {
+      getData(){
+         this.section4_data = data.section_4
+      }
+   },
+   created(){
+      this.getData()
+   }
 }
 </script>
 

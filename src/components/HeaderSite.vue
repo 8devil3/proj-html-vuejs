@@ -1,10 +1,10 @@
 <template>
 <header>
    <div class="container row justify-between align-center">
-      <img src="../assets/img/logo-dark.png" alt="Landrick logo">
+      <img :src="require('../assets/img/' + headerData.logo.fileName)" :alt="headerData.logo.alt">
       <nav>
          <ul class="row align-center">
-            <li v-for="link in links" :key="link.id"><a :href="link.url" :class="{'has-submenu':link.submenu}">{{ link.text }}</a></li>
+            <li v-for="link in headerData.links" :key="link.id"><a :href="link.url" :class="{'has-submenu':link.submenu}">{{ link.text }}</a></li>
          </ul>
       </nav>
       <div class="row align-center">
@@ -14,9 +14,9 @@
          </div>
          
          <div class="row align-center">
-            <div class="header-icons row align-center justify-center"><i class="fa-brands fa-github"></i></div>
-            <div class="header-icons row align-center justify-center"><i class="fa-brands fa-stack-overflow"></i></div>
-            <div class="header-icons row align-center justify-center"><i class="fa-regular fa-user"></i></div>
+            <div v-for="login in headerData.userLogin" :key="login.id" class="header-icons row align-center justify-center">
+               <a :href="login.url"><i :class="login.fontAwesomeClasses"></i></a>
+            </div>
          </div>
       </div>
    </div>
@@ -24,37 +24,22 @@
 </template>
 
 <script>
+import data from './siteContent.json'
+
 export default {
    name: 'HeaderSite',
    data() {
       return {
-         links: [
-            {
-               id: 1,
-               url: "#",
-               text: "home",
-               submenu: false
-            },
-            {
-               id: 2,
-               url: "#",
-               text: "landing",
-               submenu: true
-            },
-            {
-               id: 3,
-               url: "#",
-               text: "pages",
-               submenu: true
-            },
-            {
-               id: 4,
-               url: "#",
-               text: "docs",
-               submenu: true
-            }
-         ]
+         headerData: []
       }
+   },
+   methods: {
+      getData(){
+         this.headerData = data.header
+      }
+   },
+   created(){
+      this.getData()
    }
 }
 </script>

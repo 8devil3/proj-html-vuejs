@@ -2,26 +2,40 @@
 <section>
    <div class="container row justify-between align-center">
       <div class="left col">
-         <div class="badge">Development</div>
-         <h1>a complete developer toolset</h1>
-         <p>Launch your campaign and benefit from our expertise on designing an managing conversion centered bootstrap4 html page</p>
+         <div class="badge">{{ jumbotronData.badgeText }}</div>
+         <h1>{{ jumbotronData.title }}</h1>
+         <p>{{ jumbotronData.content }}</p>
          <div class="row align-center">
-            <button class="btn btn-primary">get started</button>
-            <button class="btn btn-secondary">documentation</button>
+            <button class="btn btn-primary">{{ jumbotronData.btn1txt }}</button>
+            <button class="btn btn-secondary">{{ jumbotronData.btn2txt }}</button>
          </div>
-         <p class="version">Current Version v2.6.0</p>
+         <p class="version">{{ jumbotronData.ver }}</p>
       </div>
       <div class="right">
-         <img src="../../assets/img/about.png" alt="About">
+         <img :src="require('../../assets/img/' + jumbotronData.rightImgFileName)" :alt="jumbotronData.rightImgAlt">
       </div>
    </div>
 </section>
 </template>
 
 <script>
-export default {
-   name: 'JumbotronSite'
+import data from '../siteContent.json'
 
+export default {
+   name: 'JumbotronSite',
+   data(){
+      return {
+         jumbotronData: []
+      }
+   },
+   methods: {
+      getData(){
+         this.jumbotronData = data.jumbotron
+      }
+   },
+   created(){
+      this.getData()
+   }
 }
 </script>
 

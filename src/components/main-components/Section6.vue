@@ -1,19 +1,34 @@
 <template>
 <section>
    <div class="wrapper">
-      <h2>Want to be among the first to find out?</h2>
-      <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+      <h2>{{ section6_data.title }}</h2>
+      <p v-html="section6_data.content"></p>
       <div class="input-wrapper">
-         <input type="email" id="email" placeholder="Email Addresss">
-         <button class="btn btn-primary">get started</button>
+         <input type="email" id="email" :placeholder="section6_data.inputPlaceholder">
+         <button class="btn btn-primary">{{ section6_data.btnSubmitTxt }}</button>
       </div>
    </div>
 </section>
 </template>
 
 <script>
+import data from '../siteContent.json'
+
 export default {
-   name: 'Section6'
+   name: 'Section6',
+   data(){
+      return {
+         section6_data: []
+      }
+   },
+   methods: {
+      getData(){
+         this.section6_data = data.section_6
+      }
+   },
+   created(){
+      this.getData()
+   }
 }
 </script>
 

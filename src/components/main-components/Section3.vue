@@ -1,9 +1,9 @@
 <template>
 <section>
    <div class="wrapper">
-      <p><strong>Quickstart</strong></p>
-      <h2>Awesome isn't it? Let's dive in!</h2>
-      <p>Start working with <strong>Landrick</strong> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+      <p><strong>{{ section3_data.subtitle }}</strong></p>
+      <h2>{{ section3_data.title }}</h2>
+      <p v-html="section3_data.content"></p>
       <div class="col">
          <div class="code">
             <div class="btn-lang-wrapper row align-center">
@@ -15,8 +15,8 @@
             <p><span>$</span> npm install <span>-g</span> claps.js</p>
          </div>
          <div class="row align-center">
-            <p class="features"><i class="fa-regular fa-circle-check"></i>Organize your data</p>
-            <p class="features"><i class="fa-regular fa-circle-check"></i>Work with any team</p>
+            <p class="features"><i class="fa-regular fa-circle-check"></i> {{ section3_data.feat1 }}</p>
+            <p class="features"><i class="fa-regular fa-circle-check"></i> {{ section3_data.feat2 }}</p>
          </div>
       </div>
    </div>
@@ -24,8 +24,23 @@
 </template>
 
 <script>
+import data from '../siteContent.json'
+
 export default {
-   name: 'Section3'
+   name: 'Section3',
+   data(){
+      return {
+         section3_data: {}
+      }
+   },
+   methods: {
+      getData(){
+         this.section3_data = data.section_3
+      }
+   },
+   created(){
+      this.getData()
+   }
 }
 </script>
 
