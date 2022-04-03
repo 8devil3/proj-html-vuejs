@@ -2,7 +2,8 @@
    "header": {
       "logo": {
          "fileName": "logo-dark.png",
-         "alt": "Landrick logo"
+         "alt": "Landrick logo",
+         "url": "#"
       },
       "links": [
          {

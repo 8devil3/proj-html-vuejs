@@ -1,7 +1,9 @@
 <template>
 <section>
-   <div class="container row justify-between align-center">
-      <img v-for="img in section1_data" :key="img.id" :src="require('../../assets/img/brands/' + img.imgFileName)" :alt="img.alt">
+   <div class="container">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-5">
+         <img v-for="img in section1_data" :key="img.id" :src="require('../../assets/img/brands/' + img.imgFileName)" :alt="img.alt">
+      </div>
    </div>
 </section>
 </template>
@@ -28,15 +30,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-   padding: 0;
-   height: 8rem;
-   background-color: var(--header-bg);
-   border-top: 1px #E9ECEF solid;
+@import '../../assets/scss/_colors.scss';
+@import '~bootstrap';
 
-   div {
-      height: 100%;
-   }
+section {
+   min-height: 8rem;
+   background-color: $header-bg;
+   border-top: 1px #E9ECEF solid;
 
    img {
       height: 1.5rem;
