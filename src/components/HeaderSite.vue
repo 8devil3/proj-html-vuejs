@@ -88,7 +88,7 @@ header {
       color: var(--headings);
       transition: color 0.2s;
 
-      &:hover, &.active {
+      &:hover, &.active, &:focus {
          color: var(--primary);
       }
    }
