@@ -93,8 +93,8 @@ export default {
 <style lang="scss" scoped>
 .settings-wrapper {
    position: fixed;
-   top: 8rem;
-   left: -170px;
+   top: 3.5rem;
+   left: -172px;
    z-index: 10;
    transition: left 0.4s ease-in-out;
 
