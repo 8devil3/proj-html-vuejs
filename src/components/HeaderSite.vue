@@ -101,9 +101,19 @@ header {
       justify-content: center;
    }
 
-   .dropdown-item:hover {
-      color: var(--header-bg);
-      background-color: var(--primary);
+   .dropdown-menu {
+      background-color: var(--submenu-bg);
+   }
+
+   .dropdown-item {
+      font-size: 0.9rem;
+      color: var(--submenu-link);
+      background-color: var(--submenu-bg);
+   
+      &:hover {
+         background-color: var(--primary);
+         color: var(--submenu-link-hover);
+      }
    }
 
    .dropdown-toggle::after {

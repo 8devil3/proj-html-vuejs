@@ -1,7 +1,7 @@
 <template>
 <main>
    <jumbotron-site />
-   <section-1 />
+   <section-1 :darkMode="darkMode" />
    <section-2 />
    <section-3 />
    <section-4 />
@@ -20,6 +20,7 @@ import Section5 from './main-components/Section5.vue'
 import Section6 from './main-components/Section6.vue'
 
 export default {
+   name: 'MainSite',
    components: {
       JumbotronSite,
       Section1,
@@ -29,7 +30,9 @@ export default {
       Section5,
       Section6
    },
-   name: 'MainSite'
+   props: {
+      darkMode: Boolean
+   }
 }
 </script>
 

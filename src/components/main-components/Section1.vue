@@ -2,7 +2,7 @@
 <section>
    <div class="container">
       <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-5">
-         <img v-for="img in section1_data" :key="img.id" :src="require('../../assets/img/brands/' + img.imgFileName)" :alt="img.alt">
+         <img :class="{'bright':darkMode}" v-for="img in section1_data" :key="img.id" :src="require('../../assets/img/brands/' + img.imgFileName)" :alt="img.alt">
       </div>
    </div>
 </section>
@@ -15,8 +15,12 @@ export default {
    name: 'Section1',
    data(){
       return {
-         section1_data: []
+         section1_data: [],
+         img: null
       }
+   },
+   props: {
+      darkMode: Boolean
    },
    methods: {
       getData(){
@@ -37,6 +41,10 @@ section {
 
    img {
       height: 1.5rem;
+   }
+
+   .bright {
+      filter: brightness(1.5);
    }
 }
 

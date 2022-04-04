@@ -31,6 +31,9 @@
    
    /* header */
    --header-bg: var(--primary-header);
+   --submenu-bg: var(--primary-header);
+   --submenu-link: var(--primary-dark);
+   --submenu-link-hover: var(--white);
    
    
    /* main */
@@ -62,6 +65,8 @@
    --footer-button-shadow: 0 2px 4px 0 var(--primary);
    
    --colophon-border: var(--colophon-border);
+
+   scroll-behavior: smooth;
 }
 
 
@@ -70,6 +75,8 @@
    --headings: #f8f9fc;
    --prices: #f8f9fc;
    --header-bg: var(--primary-bg);
+   --submenu-bg: var(--primary-hover);
+   --submenu-link: var(--white);
    --default-txt: #cdd4dd;
    --main-bg: var(--primary-main-bg);
    --settings-bg: var(--primary-dark);
