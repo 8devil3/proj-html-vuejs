@@ -27,5 +27,4 @@ export default {
 <style lang="scss">
 @import '~bootstrap';
 @import './assets/scss/global.scss';
-@import './assets/scss/_colors.scss';
 </style>

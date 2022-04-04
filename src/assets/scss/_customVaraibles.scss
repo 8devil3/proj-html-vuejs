@@ -1,0 +1,111 @@
+:root{
+   /* genreal */
+   --primary: #2f55d4;
+   --primary-hover: #27314f;
+   --primary-dark: #161c2d;
+   --primary-bg: #1F2D3D;
+   --primary-main-bg: #1C2836;
+   --primary-icon-bg: #2f55d41a;
+   --primary-icon-border: #d1daf6;
+
+   --primary-header: #f8f9fc;
+   --shadows: #3c485826;
+
+   --red: #e43f52;
+   --orange: #f17425;
+   --dark-orange: #d55b0e;
+   --green: #2eca8b;
+   --violet: #7952B3;
+   --white: #fff;
+   
+   
+   /* icons */
+   --icon-bg: var(--primary-icon-bg);
+   --icon-border: var(--primary-icon-border);
+   
+   /* badges */
+   --badge-bg: var(--primary-icon-bg);
+   --badge-border: var(--primary-icon-border);
+   --badge-text: var(--primary);
+   
+   
+   /* header */
+   --header-bg: var(--primary-header);
+   
+   
+   /* main */
+   --headings: var(--primary-dark);
+   --main-bg: var(--white);
+   --settings-bg: var(--white);
+
+   --default-txt: #8492a6;
+
+   --prices: var(--primary-dark);
+
+   --code-bg: #3C4858;
+   --code-btn-disabled: #4F5A69;
+   --code-btn-text: var(--white);
+   
+   
+   /* footer */
+   --footer-bg: var(--primary-dark);
+   
+   --footer-headings: #f8f9fc;
+   --footer-links-text: #adb5bd;
+   --footer-links-hover: var(--white);
+   
+   --footer-input-bg: var(--primary-hover);
+   --footer-input-placeholder: #adb5bd;
+   
+   --footer-button-bg: var(--primary-dark);
+   --footer-button-text: var(--primary);
+   --footer-button-shadow: 0 2px 4px 0 var(--primary);
+   
+   --colophon-border: var(--colophon-border);
+}
+
+
+/* dark mode */
+:root.dark-mode {
+   --headings: #f8f9fc;
+   --prices: #f8f9fc;
+   --header-bg: var(--primary-bg);
+   --default-txt: #cdd4dd;
+   --main-bg: var(--primary-main-bg);
+   --settings-bg: var(--primary-dark);
+   --primary-icon-bg: #8a9ace1a;
+   --primary-icon-border: #6f7483;
+   --shadows: #b8b8b896;
+}
+
+
+/* coloring mode */
+:root.red {
+   --primary: var(--red);
+   --primary-hover: #4f2727;
+   --primary-dark: #2d1616;
+   --primary-bg: #3d1f1f;
+   --primary-main-bg: #361c1c;
+   --primary-icon-bg: #ce8a8a1a;
+   --primary-icon-border: #836f6f;
+}
+
+:root.green {
+   --primary: var(--green);
+   --primary-hover: #274f29;
+   --primary-dark: #192d16;
+   --primary-bg: #1f3d21;
+   --primary-main-bg: #1c361c;
+   --primary-icon-bg: #92ce8a1a;
+   --primary-icon-border: #71836f;
+}
+
+:root.violet {
+   --primary: var(--violet);
+   --primary-hover: #40274f;
+   --primary-dark: #24162d;
+   --primary-bg: #2c1f3d;
+   --primary-main-bg: #271c36;
+   --primary-icon-bg: #ad8ace1a;
+   --primary-icon-border: #7a6f83;
+}

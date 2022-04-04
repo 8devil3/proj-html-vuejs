@@ -25,7 +25,7 @@ article {
    
    > div {
       padding: 1.5rem;
-      box-shadow: 0 0 4px 0 #0000001a;
+      box-shadow: 0 0 4px 0 var(--shadows);
       border-radius: 0.3rem;
 
       .icon {
@@ -41,7 +41,7 @@ article {
       h3 {
          font-size: 1.2rem;
          text-transform: capitalize;
-         color: var(--dark-blue);
+         color: var(--headings);
          font-weight: 700;
       }
 

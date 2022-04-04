@@ -1,10 +1,17 @@
 {
    "header": {
-      "logo": {
-         "fileName": "logo-dark.png",
-         "alt": "Landrick logo",
-         "url": "#"
-      },
+      "logo_light":
+         {
+            "fileName": "logo-light.png",
+            "alt": "Landrick logo",
+            "url": "#"
+         },
+      "logo_dark":
+         {
+            "fileName": "logo-dark.png",
+            "alt": "Landrick logo",
+            "url": "#"
+         },
       "links": [
          {
             "id": 1,

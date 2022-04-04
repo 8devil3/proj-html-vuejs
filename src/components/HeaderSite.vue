@@ -3,8 +3,8 @@
 <nav class="navbar navbar-expand-lg">
    <div class="container-xl">
       <!-- logo -->
-      <a class="navbar-brand" :href="headerData.logo.url">
-         <img :src="require('../assets/img/' + headerData.logo.fileName)" :alt="headerData.logo.alt" class="logo">
+      <a class="navbar-brand" :href="headerData.logo_dark.url">
+         <img :src="require('../assets/img/' + headerData.logo_dark.fileName)" :alt="headerData.logo_dark.alt" class="logo">
       </a>
       <!-- / -->
 
@@ -29,17 +29,8 @@
             </li>
          </ul>
 
-         <!-- campo ricerca -->
-         <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-         </form>
-         <!-- / -->
-
          <div class="d-flex align-items-center">
-            <div v-for="login in headerData.userLogin" :key="login.id" class="header-icons">
-               <a :href="login.url"><i :class="login.fontAwesomeClasses"></i></a>
-            </div>
+            <a class="header-icons" v-for="login in headerData.userLogin" :key="login.id" :href="login.url "><i :class="login.fontAwesomeClasses"></i></a>
          </div>
 
       </div>
@@ -81,7 +72,7 @@ header {
 
    .nav-link {
       font-size: 0.9rem;
-      color: var(--dark-blue);
+      color: var(--headings);
       transition: color 0.2s;
 
       &:hover, &.active {
@@ -90,8 +81,8 @@ header {
    }
 
    .navbar-toggler {
-      border-color: var(--dark-blue);
-      color: var(--dark-blue);
+      border-color: var(--headings);
+      color: var(--headings);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -112,7 +103,7 @@ header {
       vertical-align: baseline;
    }
 
-   .header-icons a {
+   .header-icons {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -123,7 +114,7 @@ header {
       border-radius: 0.5rem;
       font-size: 1.2rem;
       color: var(--primary);
-      box-shadow: 0 2px 4px 1px #C5D0F2;;
+      box-shadow: 0 2px 4px 1px var(--shadows);
       margin-left: 0.5rem;
       cursor: pointer;
       transition: background-color 0.2s, color 0.2s, border 0.2s;
@@ -135,73 +126,4 @@ header {
       }
    }
 }
-
-/*
-header {
-   background-color: var(--header-bg);
-   padding: 1rem;
-
-   img {
-      display: block;
-      height: 1.5rem;
-   }
-
-   nav a {
-      display: block;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      text-transform: uppercase;
-      color: var(--header-links);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-
-      &:hover {
-         color: var(--header-links-hover);
-      }
-   }
-      .has-submenu::after {
-         content: '\f078';
-         font-size: 0.8rem;
-         font-family: 'Font Awesome 6 Free';
-         font-weight: 900;
-         margin-left: 0.5rem;
-      }
-
-   .input-wrapper {
-      position: relative;
-      
-      .fa-magnifying-glass {
-         position: absolute;
-         right: 1rem;
-         top: 50%;
-         transform: translate(0, -50%);
-         font-size: 1rem;
-         color: var(--header-search-icon);
-      }
-   }
-
-   .header-icons a {
-      height: 2.25rem;
-      width: 2.25rem;
-      background-color: var(--header-icons-bg);
-      border: 1px var(--header-icons-border) solid;
-      border-radius: 0.5rem;
-      font-size: 1.2rem;
-      color: var(--header-icons-text);
-      box-shadow: var(--header-icons-shadow);
-      margin-left: 0.5rem;
-      cursor: pointer;
-      transition: background-color 0.2s, color 0.2s, border 0.2s;
-
-      &:hover {
-         background-color: var(--header-icons-bg-hover);
-         border-color: var(--header-icons-border-hover);
-         color: var(--header-icons-text-hover)
-      }
-   }
-
-
-}
-*/
 </style>

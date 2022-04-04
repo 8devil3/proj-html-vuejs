@@ -62,7 +62,7 @@ section {
    }
 
    button {
-   margin-right: 1rem;
+      margin-right: 1rem;
    }
 
    .badge {

@@ -1,7 +1,10 @@
+@import './_customVaraibles.scss';
+
 body {
    font-family: "Nunito", sans-serif;
    font-size: 16px;
    color: var(--default-txt);
+   background-color: var(--main-bg);
 }
 
 ul {
@@ -19,7 +22,7 @@ section {
 }
 
 h1, h2 {
-   color: var(--dark-blue);
+   color: var(--headings);
    font-weight: 700;
 }
 
@@ -34,6 +37,7 @@ button {
 .btn-primary {
    background-color: var(--primary);
    border-color: var(--primary);
+   color: var(--white);
 
    &:hover {
       background-color: var(--primary-hover);
@@ -43,6 +47,7 @@ button {
 
 .btn-outline-primary {
    border-color: var(--primary);
+   color: var(--primary);
 
    &:hover {
       background-color: var(--primary-hover);

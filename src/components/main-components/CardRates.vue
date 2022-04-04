@@ -31,7 +31,7 @@ export default {
 article {
    > div{
       padding: 1.5rem;
-      box-shadow: 0 0 3px #3c485826;
+      box-shadow: 0 0 3px var(--shadows);
       border-radius: 0.9rem;
       border-bottom: 3px #adb5bd solid;
       transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
@@ -40,7 +40,7 @@ article {
       &:hover {
          transform: scale(1.05);
          border-bottom: 3px var(--primary) solid;
-         box-shadow: 0 4px 16px 0 #3c485826;
+         box-shadow: 0 4px 16px 0 var(--shadows);
       }
    }
 
@@ -58,8 +58,8 @@ article {
          height: 1.25rem;
          width: 86px;
          border-top: 6px transparent solid;
-         border-left: 6px var(--badge-best-shadow) solid;
-         border-right: 6px var(--badge-best-shadow) solid;
+         border-left: 6px var(--dark-orange) solid;
+         border-right: 6px var(--dark-orange) solid;
          border-bottom: 6px transparent solid;
          transform: rotate(45deg) translate(0, -50%);
          z-index: 10;
@@ -69,7 +69,7 @@ article {
             flex-shrink: 0;
             height: 1.25rem;
             width: 86px;
-            background-color: var(--badge-best-bg);
+            background-color: var(--orange);
             font-size: 0.8rem;
             color: #fff;
             text-align: center;         
