@@ -1,7 +1,7 @@
 :root{
    /* genreal */
    --primary: #2f55d4;
-   --primary-hover: #27314f;
+   --primary-hover: #2443AC;
    --primary-dark: #161c2d;
    --primary-bg: #1F2D3D;
    --primary-main-bg: #1C2836;
@@ -74,7 +74,7 @@
    --main-bg: var(--primary-main-bg);
    --settings-bg: var(--primary-dark);
    --primary-icon-bg: #8a9ace1a;
-   --primary-icon-border: #6f7483;
+   --primary-icon-border: #d3d9f1;
    --shadows: #b8b8b896;
 }
 
@@ -82,30 +82,30 @@
 /* coloring mode */
 :root.red {
    --primary: var(--red);
-   --primary-hover: #4f2727;
+   --primary-hover: #ac2424;
    --primary-dark: #2d1616;
    --primary-bg: #3d1f1f;
    --primary-main-bg: #361c1c;
    --primary-icon-bg: #ce8a8a1a;
-   --primary-icon-border: #836f6f;
+   --primary-icon-border: #f1d3d3;
 }
 
 :root.green {
    --primary: var(--green);
-   --primary-hover: #274f29;
+   --primary-hover: #34ac24;
    --primary-dark: #192d16;
    --primary-bg: #1f3d21;
    --primary-main-bg: #1c361c;
    --primary-icon-bg: #92ce8a1a;
-   --primary-icon-border: #71836f;
+   --primary-icon-border: #d3f1d5;
 }
 
 :root.violet {
    --primary: var(--violet);
-   --primary-hover: #40274f;
+   --primary-hover: #5424ac;
    --primary-dark: #24162d;
    --primary-bg: #2c1f3d;
    --primary-main-bg: #271c36;
    --primary-icon-bg: #ad8ace1a;
-   --primary-icon-border: #7a6f83;
+   --primary-icon-border: #dfd3f1;
 }

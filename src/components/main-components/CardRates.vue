@@ -1,7 +1,7 @@
 <template>
 <article>
    <div>
-      <div v-show="card.best" class="badge-best-wrapper row align-center justify-center">
+      <div v-show="card.best" class="badge-best-wrapper">
          <div class="badge-shadow"><div class="badge-best">Best</div></div>
       </div>
 
@@ -46,35 +46,36 @@ article {
 
    .badge-best-wrapper {
       position: absolute;
-      top: -0.25rem;
-      right: -0.25rem;
-      height: 4.25rem;
-      width: 4.25rem;
+      top: -6px;
+      right: -6px;
+      height: 75px;
+      width: 75px;
       overflow: hidden;
+      display: block;
 
       .badge-shadow {
          flex-shrink: 0;
          position: relative;
-         height: 1.25rem;
-         width: 86px;
-         border-top: 6px transparent solid;
-         border-left: 6px var(--dark-orange) solid;
-         border-right: 6px var(--dark-orange) solid;
-         border-bottom: 6px transparent solid;
-         transform: rotate(45deg) translate(0, -50%);
+         height: 20px;
+         width: 96px;
+         border-top: 8px transparent solid;
+         border-left: 8px var(--dark-orange) solid;
+         border-right: 8px var(--dark-orange) solid;
+         border-bottom: 8px transparent solid;
+         transform: rotate(45deg) translate(12px, 20px);
          z-index: 10;
          
          .badge-best {
             position: absolute;
             flex-shrink: 0;
-            height: 1.25rem;
-            width: 86px;
+            height: 20px;
+            width: 96px;
             background-color: var(--orange);
-            font-size: 0.8rem;
+            font-size: 13px;
             color: #fff;
             text-align: center;         
-            top: -12px;
-            left: -6px;
+            top: -16px;
+            left: -8px;
          }
       }
    }
