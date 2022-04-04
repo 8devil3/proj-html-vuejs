@@ -30,6 +30,8 @@
          </ul>
 
          <div class="d-flex align-items-center">
+            <input type="text" id="search" class="search-input">
+            <button class="search-icon" @click="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
             <a class="header-icons" v-for="login in headerData.userLogin" :key="login.id" :href="login.url "><i :class="login.fontAwesomeClasses"></i></a>
          </div>
 
@@ -47,15 +49,22 @@ export default {
    data() {
       return {
          headerData: [],
+         searchInput: null
       }
    },
    methods: {
       getData(){
          this.headerData = data.header
+      },
+      toggleSearch(){
+         this.searchInput.classList.toggle('search-active')
       }
    },
    created(){
       this.getData()
+   },
+   mounted(){
+      this.searchInput = document.querySelector('#search')
    }
 }
 </script>
@@ -101,6 +110,25 @@ header {
       border: 0;
       margin: 0 0 0 0.5rem;
       vertical-align: baseline;
+   }
+
+   .search-icon {
+      background: transparent;
+      border: 0;
+      padding: 0.5rem 1rem;
+      color: var(--default-text);
+      font-size: 1rem;
+   }
+
+   .search-input {
+      width: 0;
+      opacity: 0;
+      transition: width 0.4s, opacity 0.5s ease-in-out;
+   }
+
+   .search-active {
+      width: 10rem;
+      opacity: 1;
    }
 
    .header-icons {
