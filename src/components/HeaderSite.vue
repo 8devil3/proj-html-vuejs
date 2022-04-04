@@ -4,7 +4,8 @@
    <div class="container-xl">
       <!-- logo -->
       <a class="navbar-brand" :href="headerData.logo_dark.url">
-         <img :src="require('../assets/img/' + headerData.logo_dark.fileName)" :alt="headerData.logo_dark.alt" class="logo">
+         <img v-if="!darkMode" :src="require('../assets/img/' + headerData.logo_dark.fileName)" :alt="headerData.logo_dark.alt" class="logo">
+         <img v-else :src="require('../assets/img/' + headerData.logo_light.fileName)" :alt="headerData.logo_dark.alt" class="logo">
       </a>
       <!-- / -->
 
@@ -51,6 +52,9 @@ export default {
          headerData: [],
          searchInput: null
       }
+   },
+   props: {
+      darkMode: Boolean
    },
    methods: {
       getData(){

@@ -41,6 +41,11 @@ export default {
       openSettingsPanel(){
          this.settingsPanel.classList.toggle('settings-open')
       },
+      setDarkMode(){
+         this.root.classList.toggle('dark-mode')
+         this.darkMode = !this.darkMode
+         this.$emit('setDarkMode', this.darkMode)
+      },
       setFontSize(fs) {
          switch (fs) {
             case 'small':
@@ -53,9 +58,6 @@ export default {
                this.root.style.fontSize = '18px';
                break;
          }
-      },
-      setDarkMode(){ //dark mode
-         this.root.classList.toggle('dark-mode')
       },
       setColors(color){
          switch (color) {

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <header-site />
-    <settings-site />
+    <header-site :darkMode="darkMode"/>
+    <settings-site @setDarkMode="setDarkMode"/>
     <main-site />
     <footer-site />
   </div>
@@ -20,6 +20,16 @@ export default {
     SettingsSite,
     MainSite,
     FooterSite
+  },
+  data(){
+    return {
+      darkMode: false
+    }
+  },
+  methods: {
+    setDarkMode(value){
+      this.darkMode = value
+    }
   }
 }
 </script>
