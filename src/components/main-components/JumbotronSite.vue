@@ -42,11 +42,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_colors.scss';
-@import '~bootstrap';
-
 section {
-   background-color: $header-bg;
+   background-color: var(--header-bg);
 
    h1 {
       text-transform: capitalize;
@@ -72,10 +69,10 @@ section {
       text-transform: capitalize;
       padding: 0.25rem 0.5rem;
       margin-bottom: 1rem;
-      background-color: $badge-bg;
-      border: 1px $badge-border solid;
+      background-color: var(--badge-bg);
+      border: 1px var(--badge-border) solid;
       border-radius: 500px;
-      color: $badge-text;
+      color: var(--badge-text);
       font-size: 0.8rem;
       font-weight: 700;
       width: fit-content;

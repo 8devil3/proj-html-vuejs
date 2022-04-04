@@ -1,16 +1,18 @@
 <template>
 <section>
-   <div class="container row align-center justify-between">
-      <div class="left">
-         <h2>{{ section4_data.title }}</h2>
-         <p>{{ section4_data.content }}</p>
-         <ul>
-            <li v-for="feat in section4_data.features" :key="feat.id">{{ feat.text }}</li>
-         </ul>
-         <button class="btn btn-primary">read more <i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-      <div class="right">
-         <img :src="require('../../assets/img/' + section4_data.imgRightFilename)" :alt="section4_data.imgRightAlt">
+   <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-5 align-items-center">
+         <div class="col">
+            <h2>{{ section4_data.title }}</h2>
+            <p>{{ section4_data.content }}</p>
+            <ul>
+               <li v-for="feat in section4_data.features" :key="feat.id">{{ feat.text }}</li>
+            </ul>
+            <button class="btn btn-primary">read more <i class="fa-solid fa-arrow-right"></i></button>
+         </div>
+         <div class="col">
+            <img :src="require('../../assets/img/' + section4_data.imgRightFilename)" :alt="section4_data.imgRightAlt">
+         </div>
       </div>
    </div>
 </section>
@@ -39,45 +41,37 @@ export default {
 
 <style lang="scss" scoped>
 section {
-   .left {
-      width: 50%;
+   p {
+      margin: 2rem 0 1.5rem 0
+   }
 
-      p {
-         margin: 2rem 0 1.5rem 0
-      }
+   ul {
+      margin-bottom: 2rem;
 
-      ul {
-         margin-bottom: 2rem;
+      li {
+         margin: 0.25rem 0;
 
-         li {
-            margin: 0.25rem 0;
-   
-            &::before {
-               content: '\f058';
-               font-family: 'Font Awesome 6 Free';
-               font-weight: 40;
-               font-size: 1rem;
-               color: var(--primary);
-               margin-right: 0.5rem;
-               vertical-align: middle;
-            }
+         &::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 40;
+            font-size: 1rem;
+            color: var(--primary);
+            margin-right: 0.5rem;
+            vertical-align: middle;
          }
-      }
-
-      button .fa-arrow-right {
-         font-size: 0.8rem;
-         margin-left: 0.25rem;
       }
    }
 
-   .right {
-      width: 40%;
+   button .fa-arrow-right {
+      font-size: 0.8rem;
+      margin-left: 0.25rem;
+   }
 
-      img {
-         width: 100%;
-         height: 100%;
-         object-fit: contain;
-      }
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
    }
 }
 </style>

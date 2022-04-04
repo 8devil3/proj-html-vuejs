@@ -1,201 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+   font-family: "Nunito", sans-serif;
+   font-size: 16px;
+   color: var(--default-txt);
 }
 
 ul {
-    list-style: none;
+   list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
-:root {
-/* tipografia */
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    color: var(--content-text);
-
-    h1, h2, h3 {
-        line-height: 150%;
-        font-weight: 700;
-        color: var(--h2);
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    strong {
-        font-weight: 700;
-        color: var(--primary);
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-
-/* colori */
-
-    /* colori base */
-    --primary: #2f55d4;
-    --primary-hover: #2443AC;
-    --green: #2ECA8B;
-
-    /* header */
-    --header-bg: #F8F9FC;
-    --header-links: #161C2D;
-    --header-links-hover: var(--primary);
-
-    --header-search-icon: #adb5bd;
-
-    --header-icons-bg: #2f55d41a;
-    --header-icons-border: #d1daf6;
-    --header-icons-text: var(--primary);
-    --header-icons-bg-hover: var(--primary);
-    --header-icons-border-hover: var(--primary);
-    --header-icons-text-hover: #fff;
-
-    --header-icons-shadow: 0 2px 4px 1px #C5D0F2;
-
-    /* main */
-    --content-text: #8492a6;
-    --h2: #161C2D;
-    --h3: #3c4858;
-
-    --badge-bg: #2f55d41a;
-    --badge-border: #D4DDF7;
-    --badge-text: var(--primary);
-
-    --prices: #161C2D;
-
-    --icons-bg: #e5e9f6;
-    --icons-border: #d1daf6;
-
-    --badge-best-bg: #F17425;
-    --badge-best-shadow: #d55b0e;
-
-    --code-bg: #3C4858;
-    --code-btn-disabled: #4F5A69;
-    --code-btn-text: #fff;
-
-    /* footer */
-    --footer-bg: #202942;
-    --footer-links-text: #adb5bd;
-    --footer-links-hover: #fff;
-    --footer-headings: #f8f9fc;
-
-    --input-bg: #27314f;
-    --input-placeholder: #adb5bd;
-    --input-label-mandatory: #e43f52;
-
-    --button-bg: #27314f;
-    --button-text: var(--primary);
-    --button-shadow: 0 2px 4px 0 var(--primary);
-
-    --colophon-border: #283353;
-
-    /* colori pulsanti */
-    --btn-shadow: #2f55d41a;
-
-    --btn-primary-bg: var(--primary);
-    --btn-primary-bg-hover: var(--primary-hover);
-    --btn-primary-border: var(--primary);
-    --btn-primary-border-hover: var(--primary-hover);
-    --btn-primary-text: #fff;
-    --btn-primary-text-hover: #fff;
-
-    --btn-secondary-bg: #fff;
-    --btn-secondary-bg-hover: var(--primary-hover);
-    --btn-secondary-border: var(--primary);
-    --btn-secondary-border-hover: var(--primary-hover);
-    --btn-secondary-text: var(--primary);
-    --btn-secondary-text-hover: #fff;
-}
-
-/* layout */
-
-.container {
-    max-width: 1120px;
-    margin: 0 auto;
+a {
+   text-decoration: none;
 }
 
 section {
-    padding: 3rem 0;
+   padding: 3rem 0;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
+h1, h2 {
+   color: var(--dark-blue);
+   font-weight: 700;
 }
 
-.col {
-    display: flex;
-    flex-direction: column;
+strong {
+   color: var(--primary);
 }
-
-.wrap {
-    flex-wrap: wrap;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.align-stretch {
-    align-items: stretch;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-
-/* pulsanti */
 
 button {
-    border: 0;
-    border-radius: 0.4rem;
-    display: block;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
-    flex-shrink: 0;
-    cursor: pointer;
+   text-transform: capitalize;
 }
 
 .btn-primary {
-    padding: 0.6rem 1.2rem;
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-text);
-    border: 1px var(--btn-primary-border) solid;
-    box-shadow: 0 4px 6px 0 var(--btn-shadow);
-    font-weight: 700;
-    transition: background 0.2s, border 0.2s, color 0.2s;
+   background-color: var(--primary);
+   border-color: var(--primary);
 
-    &:hover {
-        background-color: var(--btn-primary-bg-hover);
-        color: var(--btn-primary-text-hover);
-        border: 1px var(--btn-primary-border-hover) solid;
-    }
+   &:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+   }
 }
 
-.btn-secondary {
-    padding: 0.6rem 1.2rem;
-    background-color: var(--btn-secondary-bg);
-    color: var(--btn-secondary-text);
-    border: 1px var(--btn-secondary-border) solid;
-    box-shadow: 0 4px 6px 0 var(--btn-shadow);
-    font-weight: 700;
-    transition: background 0.2s, border 0.2s, color 0.2s;
+.btn-outline-primary {
+   border-color: var(--primary);
 
-    &:hover {
-        background-color: var(--btn-secondary-bg-hover);
-        color: var(--btn-secondary-text-hover);
-        border: 1px var(--btn-secondary-border-hover) solid;
-    }
+   &:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+   }
 }

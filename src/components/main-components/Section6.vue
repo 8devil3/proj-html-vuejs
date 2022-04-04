@@ -1,11 +1,13 @@
 <template>
 <section>
-   <div class="wrapper">
-      <h2>{{ section6_data.title }}</h2>
-      <p v-html="section6_data.content"></p>
-      <div class="input-wrapper">
-         <input type="email" id="email" :placeholder="section6_data.inputPlaceholder">
-         <button class="btn btn-primary">{{ section6_data.btnSubmitTxt }}</button>
+   <div class="container">
+      <div class="col-12 col-lg-6 text-center mx-auto">
+         <h2>{{ section6_data.title }}</h2>
+         <p v-html="section6_data.content"></p>
+         <div class="input-wrapper">
+            <input type="email" id="email" :placeholder="section6_data.inputPlaceholder">
+            <button class="btn btn-primary">{{ section6_data.btnSubmitTxt }}</button>
+         </div>
       </div>
    </div>
 </section>
@@ -34,11 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-   .wrapper {
-      margin: 0 auto;
-      text-align: center;
-      max-width: 35rem;
-   }
 
    p {
       margin: 2rem 0;
@@ -57,9 +54,10 @@ section {
       button {
          position: absolute;
          top: 50%;
-         right: 0.4rem;
+         right: 0.5rem;
          transform: translate(0, -50%);
          border-radius: 500px;
+         height: 3rem;
       }
    }
 }

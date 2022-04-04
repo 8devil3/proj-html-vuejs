@@ -21,9 +21,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_colors.scss';
-@import '~bootstrap';
-
 article {
    
    > div {
@@ -34,9 +31,9 @@ article {
       .icon {
          height: 4rem;
          width: 4rem;
-         background-color: $icon-bg;
+         background-color: var(--icon-bg);
          border-radius: 0.3rem;
-         color: $primary;
+         color: var(--primary);
          font-size: 1.5rem;
          margin-bottom: 1.5rem;
       }
@@ -44,6 +41,8 @@ article {
       h3 {
          font-size: 1.2rem;
          text-transform: capitalize;
+         color: var(--dark-blue);
+         font-weight: 700;
       }
 
       p {
@@ -53,12 +52,12 @@ article {
 
       a {
          display: block;
-         color: $primary;
+         color: var(--primary);
          font-weight: 700;
          text-transform: capitalize;
 
          &:hover {
-            color:$primary-hover;
+            color: var(--primary-hover);
          }
 
          &::after {

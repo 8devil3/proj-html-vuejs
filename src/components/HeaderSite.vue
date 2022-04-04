@@ -55,7 +55,7 @@ export default {
    name: 'HeaderSite',
    data() {
       return {
-         headerData: []
+         headerData: [],
       }
    },
    methods: {
@@ -70,11 +70,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/_colors.scss';
 @import '~bootstrap';
 
 header {
-   background-color: $header-bg;
+   background-color: var(--header-bg);
 
    .logo {
       height: 1.5rem;
@@ -82,25 +81,25 @@ header {
 
    .nav-link {
       font-size: 0.9rem;
-      color: $dark-blue;
+      color: var(--dark-blue);
       transition: color 0.2s;
 
       &:hover, &.active {
-         color: $primary;
+         color: var(--primary);
       }
    }
 
    .navbar-toggler {
-      border-color: $dark-blue;
-      color: $dark-blue;
+      border-color: var(--dark-blue);
+      color: var(--dark-blue);
       display: flex;
       align-items: center;
       justify-content: center;
    }
 
    .dropdown-item:hover {
-      color: $header-bg;
-      background-color: $primary;
+      color: var(--header-bg);
+      background-color: var(--primary);
    }
 
    .dropdown-toggle::after {
@@ -119,20 +118,20 @@ header {
       align-items: center;
       height: 2.25rem;
       width: 2.25rem;
-      background-color: $icon-bg;
-      border: 1px $icon-border solid;
+      background-color: var(--icon-bg);
+      border: 1px var(--icon-border) solid;
       border-radius: 0.5rem;
       font-size: 1.2rem;
-      color: $primary;
+      color: var(--primary);
       box-shadow: 0 2px 4px 1px #C5D0F2;;
       margin-left: 0.5rem;
       cursor: pointer;
       transition: background-color 0.2s, color 0.2s, border 0.2s;
 
       &:hover {
-         background-color: $primary;
-         border-color: $primary;
-         color: $header-bg;
+         background-color: var(--primary);
+         border-color: var(--primary);
+         color: var(--header-bg);
       }
    }
 }

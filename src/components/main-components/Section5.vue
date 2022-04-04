@@ -1,11 +1,11 @@
 <template>
 <section>
    <div class="container">
-      <div class="top">
+      <div class="col-12 col-md-6 text-center mx-auto">
          <h2>{{ section5_data.title }}</h2>
          <p v-html="section5_data.content"></p>
       </div>
-      <div class="row card-wrapper">
+      <div class="row row-cols-1 row-cols-md-3 g-5">
          <card-rates v-for="card in section5_data.cards" :key="card.id" :card="card"/>
       </div>
    </div>
@@ -37,18 +37,8 @@ export default {
 
 <style lang="scss" scoped>
 section{
-   .top {
-      width: 50%;
-      margin: 0 auto;
-      text-align: center;
-
-      p {
-         margin: 1rem 0 4rem 0;
-      }
-   }
-
-   .card-wrapper {
-      margin: 0 -1rem;
+   p {
+      margin: 1rem 0 4rem 0;
    }
 }
 </style>

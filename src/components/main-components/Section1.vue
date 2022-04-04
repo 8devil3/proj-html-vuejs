@@ -30,12 +30,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_colors.scss';
-@import '~bootstrap';
-
 section {
    min-height: 8rem;
-   background-color: $header-bg;
+   background-color: var(--header-bg);
    border-top: 1px #E9ECEF solid;
 
    img {

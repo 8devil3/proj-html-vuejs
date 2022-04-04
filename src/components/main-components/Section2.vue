@@ -36,9 +36,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_colors.scss';
-@import '~bootstrap';
-
 section {
    p {
       max-width: 80rem;

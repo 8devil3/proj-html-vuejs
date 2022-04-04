@@ -1,18 +1,20 @@
 <template>
 <article>
-   <div v-show="card.best" class="badge-best-wrapper row align-center justify-center">
-      
-      <div class="badge-shadow"><div class="badge-best">Best</div></div>
+   <div>
+      <div v-show="card.best" class="badge-best-wrapper row align-center justify-center">
+         <div class="badge-shadow"><div class="badge-best">Best</div></div>
+      </div>
+
+      <div class="badge">{{ card.plan }}</div>
+      <p class="price">{{ card.price }}</p>
+      <p>{{ card.period }}</p>
+      <p>{{ card.description }}</p>
+      <ul>
+         <li v-for="item in card.features" :key="item.id">{{ item.feature }}</li>
+      </ul>
+      <button class="btn btn-primary">buy now</button>
+      <p>*No credit card required</p>
    </div>
-   <div class="badge">{{ card.plan }}</div>
-   <p class="price">{{ card.price }}</p>
-   <p>{{ card.period }}</p>
-   <p>{{ card.description }}</p>
-   <ul>
-      <li v-for="item in card.features" :key="item.id">{{ item.feature }}</li>
-   </ul>
-   <button class="btn btn-primary">buy now</button>
-   <p>*No credit card required</p>
 </article>
 </template>
 
@@ -27,18 +29,19 @@ export default {
 
 <style lang="scss" scoped>
 article {
-   padding: 1.5rem;
-   box-shadow: 0 0 3px #3c485826;
-   margin: 0 1rem;
-   border-radius: 0.9rem;
-   border-bottom: 3px #adb5bd solid;
-   transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
-   position: relative;
+   > div{
+      padding: 1.5rem;
+      box-shadow: 0 0 3px #3c485826;
+      border-radius: 0.9rem;
+      border-bottom: 3px #adb5bd solid;
+      transition: transform 0.3s, border 0.3s, box-shadow 0.3s;
+      position: relative;
 
-   &:hover {
-      transform: scale(1.05);
-      border-bottom: 3px var(--primary) solid;
-      box-shadow: 0 4px 16px 0 #3c485826;
+      &:hover {
+         transform: scale(1.05);
+         border-bottom: 3px var(--primary) solid;
+         box-shadow: 0 4px 16px 0 #3c485826;
+      }
    }
 
    .badge-best-wrapper {
@@ -74,7 +77,6 @@ article {
             left: -6px;
          }
       }
-         
    }
 
    .badge {
