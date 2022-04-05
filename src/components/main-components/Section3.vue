@@ -8,32 +8,15 @@
          <div>
             <div class="code">
                <ul class="nav nav-pills nav-justified mb-3 btn-lang-wrapper" id="pills-tab" role="tablist">
-                  <li role="presentation" class="nav-item">
-                     <button class="nav-link btn-lang active" id="pills-npm-tab" data-bs-toggle="pill" data-bs-target="#pills-npm" type="button" role="tab" aria-controls="pills-npm" aria-selected="true">npm</button>
-                  </li>
-                  <li role="presentation" class="nav-item">
-                     <button class="nav-link btn-lang" id="pills-nuget-tab" data-bs-toggle="pill" data-bs-target="#pills-nuget" type="button" role="tab" aria-controls="pills-nuget" aria-selected="false">nuget</button>
-                  </li>
-                  <li role="presentation" class="nav-item">
-                     <button class="nav-link btn-lang" id="pills-spm-tab" data-bs-toggle="pill" data-bs-target="#pills-spm" type="button" role="tab" aria-controls="pills-spm" aria-selected="false">spm</button>
-                  </li>
-                  <li role="presentation" class="nav-item">
-                     <button class="nav-link btn-lang" id="pills-github-tab" data-bs-toggle="pill" data-bs-target="#pills-github" type="button" role="tab" aria-controls="pills-github" aria-selected="false">github</button>
+                  <li role="presentation" class="nav-item" v-for="(code, index) in section3_data.codeLang" :key="code.id">
+                     <button :class="index == 0 ? 'nav-link btn-lang active' : 'nav-link btn-lang'" :id="'pills-' + code.name + '-tab'" data-bs-toggle="pill" :data-bs-target="'#pills-' + code.name" type="button" role="tab" :aria-controls="'pills-' + code.name" aria-selected="true">{{ code.name }}</button>
                   </li>
                </ul>
                <div class="tab-content" id="pills-tabContent">
-               <div class="tab-pane fade show active" id="pills-npm" role="tabpanel" aria-labelledby="pills-npm-tab">
-                  <p><span>$</span> npm install <span>-g</span> claps.js</p>
-               </div>
-               <div class="tab-pane fade" id="pills-nuget" role="tabpanel" aria-labelledby="pills-nuget-tab">
-                  <p><span>$</span> nuget install <span>-g</span> claps.js</p>
-               </div>
-               <div class="tab-pane fade" id="pills-spm" role="tabpanel" aria-labelledby="pills-spm-tab">
-                  <p><span>$</span> spm install <span>-g</span> claps.js</p>
-               </div>
-               <div class="tab-pane fade" id="pills-github" role="tabpanel" aria-labelledby="pills-github-tab">
-                  <p><span>$</span> github install <span>-g</span> claps.js</p>
-               </div>
+
+                  <div v-for="(code, index) in section3_data.codeLang" :key="code.id" :class="index == 0 ? 'tab-pane fade show active':'tab-pane fade'" :id="'pills-' + code.name" role="tabpanel" :aria-labelledby="'pills-' + code.name + '-tab'">
+                     <p v-html="code.code"></p>
+                  </div>
                </div>
             </div>
             <div class="d-flex align-items-center flex-wrap">
@@ -53,7 +36,7 @@ export default {
    name: 'Section3',
    data(){
       return {
-         section3_data: {}
+         section3_data: {},
       }
    },
    methods: {
@@ -104,10 +87,6 @@ section {
          text-align: left;
          margin: 0;
          font-weight: 700;
-
-         span {
-            color: var(--green);
-         }
       }
    }
 

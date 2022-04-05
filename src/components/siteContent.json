@@ -206,7 +206,29 @@
       "title": "Awesome isn't it? Let's dive in!",
       "content": "Start working with <strong>Landrick</strong> that can provide everything you need to generate awareness, drive traffic, connect.",
       "feat1": "Organize your data",
-      "feat2": "Work with any team"
+      "feat2": "Work with any team",
+      "codeLang": [
+         {
+            "id": 1,
+            "name": "npm",
+            "code": "<span class=\"green\">$</span> npm install <span class=\"green\">-g</span> claps.js"
+         },
+         {
+            "id": 2,
+            "name": "nuget",
+            "code": "<span class=\"green\">$</span> nuget install <span class=\"green\">-g</span> claps.js"
+         },
+         {
+            "id": 3,
+            "name": "spm",
+            "code": "<span class=\"green\">$</span> spm install <span class=\"green\">-g</span> claps.js"
+         },
+         {
+            "id": 4,
+            "name": "github",
+            "code": "<span class=\"green\">$</span> github install <span class=\"green\">-g</span> claps.js"
+         }
+      ]
    },
    "section_4": {
       "title": "Build tools and extensive documentation",
