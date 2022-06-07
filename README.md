@@ -1,8 +1,6 @@
 # proj-html-vuejs
 ## Screenshots
-<img src="Instructions and graphics/graphics/screen1.png" width="200" height="100">
-<img src="Instructions and graphics/graphics/screen2.png" width="200" height="100">
-<img src="Instructions and graphics/graphics/screen3.png" width="104" height="100">
+<img src="Instructions and graphics/graphics/screen1.png" width="200" height="100"> <img src="Instructions and graphics/graphics/screen2.png" width="200" height="100"> <img src="Instructions and graphics/graphics/screen3.png" width="104" height="100">
 <hr>
 
 ## Description
