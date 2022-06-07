@@ -1,19 +1,37 @@
 # proj-html-vuejs
+## Description
+This project, entirely in Vue.JS 2, represents the culmination of the <em>frontend phase</em> of the <a href="https://boolean.careers/corso/full-stack-web-developer">Boolean Careers</a> course.
+Following the instructions and graphics provided, I prepared this demo landing page by also adding some unsolicited features, which include:
+- responsive design (Bootstrap 5.1.3)
+- a JSON file that simulates an API data flow, where texts, menu items and images (file names) come from:
+   ```
+   \src\components\siteContent.json
+   ```
+- an expandable panel on the left side (gear icon)
+- the panel includes three graphic editing functions
+   - choice of three alternative colors to blue (default color)
+   - dark mode, in tone with the chosen color
+   - three font sizes (large, default, small)
 
-## Project setup
-```
-npm install
-```
+<hr>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
+Clone this repo, then:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Project setup
+   ```
+   npm install
+   ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Compiles and hot-reloads for development
+   ```
+   npm run serve
+   ```
+
+- Compiles and minifies for production
+   ```
+   npm run build
+   ```
+
+- Customize configuration
+   See [Configuration Reference](https://cli.vuejs.org/config/).
